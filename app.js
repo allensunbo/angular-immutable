@@ -1,5 +1,6 @@
-// we want to detect element value changes in an array, $watchColelction does not work for this case,
-// so we have to resort to $watch with objectEquality == true. This will cause performance
+// we want to detect element value changes in an array, $watchCollection does not work for this case,
+// so we have to resort to $watch with objectEquality == true. This will cause performance.
+// Using immutable.js helps us in this scenario!
 
 angular.module('App', [])
     .constant('LEN', 10000)
