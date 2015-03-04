@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" class="">
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="Content-Language" content="en">
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/immutable/dist/immutable.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-app="App">
+    <div ng-controller="MainCtrl as main" ng-cloak>
+        <input ng-model="main.newItem" ng-change="main.addItem()">
+        <p>mid element is: {{main.mid}} </p>
+    </div>
+
+    <div ng-controller="SecondCtrl as second" style="margin-top:20px;">
+        <input ng-model="second.newItem" ng-change="second.addItem()">
+        <p>mid element is: {{second.mid}} </p>
+    </div>
+</body>
+
+</html>
