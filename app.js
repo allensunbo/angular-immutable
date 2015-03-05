@@ -25,7 +25,7 @@ angular.module('App', [])
             }
         }, true);
 
-        vm.addItem = function() {
+        vm.updateItem = function() {
             vm.items[LEN / 2].value = vm.newItem;
         }
     })
@@ -42,7 +42,7 @@ angular.module('App', [])
             }
         }, false);
 
-        vm.addItem = function() {
+        vm.updateItem = function() {
             vm.items = vm.items.splice(LEN / 2, 1, {
                 value: vm.newItem
             });
